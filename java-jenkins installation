@@ -1,0 +1,76 @@
+ 1  sudo apt-get update
+    2  sudo apt-get install open-jdk-17-jre -y
+    3  sudo apt-get install openjdk-17-jre -y
+    4  java -version
+    5  cd /opt
+    6  ll
+    7  cd
+    8  sudo apt install openjdk-11-jre -y
+    9  java -version
+   10  sudo dpkg --list | grep -i jdk
+   11  sudo update-alternatives --config java
+   12  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+   13  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   14  sudo apt-get update
+   15  sudo apt-get install jenkins
+   16  sudo systemctl enable jenkins
+   17  sudo systemctl start jenkins
+   18  sudo systemctl status jenkins
+   19  sudo systemctl jenkins start
+   20  java -version
+   21  sudo systemctl enable jenkins
+   22  sudo systemctl jenkins start
+   23  sudo systemctl start jenkins
+   24  sudo systemctl status jenkins
+   25  cat /var/lib/jenkins/secrets/initialAdminPassword
+   26  wget https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
+   27  ll
+   28  tar -xvf apache-maven-3.8.8-bin.tar.gz 
+   29  mv apache-maven-3.8.8 /opt/apache-maven-3.8.8
+   30  cd opt
+   31  cd /opt
+   32  ll
+   33  cd 
+   34  sudo update-alternatives --config java
+   35  java -version
+   36  sudo update-alternatives --config java
+   37  javac -version
+   38  javac
+   39  sudo dpkg --list | grep -i jdk
+   40  sudo apt-get purge openjdk-11
+   41  sudo apt-get purge openjdk-11-jre
+   42  sudo dpkg --list | grep -i jdk
+   43  sudo apt-get purge openjdk-11-jre-headless
+   44  sudo dpkg --list | grep -i jdk
+   45  update-java-alternatives -l
+   46  sudo systemctl start jenkins
+   47  sudo systemctl status jenkins
+   48  apt-get install git -y
+   49  git -version
+   50  git --version
+   51  cd /var/lib/jenkins
+   52  ll
+   53  cd /jobs
+   54  cd jobs
+   55  ll
+   56  ls /job1
+   57  ls job1/
+   58  cd job1
+   59  cd builds
+   60  ll
+   61  cd
+   62  ll
+   63  ls -lrt
+   64  ll
+   65  git status
+   66  cd /var/lib/jenkins/jobs/job1
+   67  ll
+   68  cd ..
+   69  ll
+   70  cd worksapce
+   71  cd worksapce/
+   72  cd workspace/
+   73  ll
+   74  cd job1/
+   75  ll
+   76  history
